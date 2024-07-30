@@ -26,7 +26,7 @@ public class WebDriverUtility {
 	public void maximizeBrowserWindow(WebDriver driver) {
 		driver.manage().window().maximize();
 	}
-	
+
 	public void refreshBrowserWindow(WebDriver driver) {
 		driver.navigate().refresh();
 	}
@@ -38,7 +38,7 @@ public class WebDriverUtility {
 	public void enterInputIntoElement(WebDriver driver, String input, WebElement element) {
 		element.sendKeys(input);
 	}
-	
+
 	public void clearAndEnterInputIntoElement(WebDriver driver, String input, WebElement element) {
 		element.clear();
 		element.sendKeys(input);
@@ -55,11 +55,11 @@ public class WebDriverUtility {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public boolean verifyElementIsDisplayed(WebDriver driver, WebElement element) {
 		return element.isDisplayed();
 	}
-	
+
 	public String getScreenshotOfCurrentPage(WebDriver driver, String fileName, String directory) {
 		// Ensure the directory exists
 		try {

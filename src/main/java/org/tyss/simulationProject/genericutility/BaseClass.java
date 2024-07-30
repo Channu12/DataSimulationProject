@@ -10,8 +10,9 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.tyss.simulationProject.objectrepository.HomePage;
 import org.tyss.simulationProject.workflowutility.CommonWorkflowsUtility;
+
+import com.jcraft.jsch.Session;
 
 public class BaseClass {
 	public ExcelUtility excelUtility = new ExcelUtility();
@@ -21,9 +22,12 @@ public class BaseClass {
 	public RestAssuredUtility restAssuredUtility = new RestAssuredUtility();
 	public WebDriverUtility webDriverUtility = new WebDriverUtility();
 	public DatabaseUtility databaseUtilty = new DatabaseUtility();
+	public SshUtility sshUtility = new SshUtility();
 	public CommonWorkflowsUtility commonWorkflowUtility = new CommonWorkflowsUtility();
 	public WebDriver driver;
 	Connection connection;
+	Session session;
+
 	@BeforeSuite
 	public void configBS() {
 		System.out.println("*********Connect to the Database*********");
@@ -32,6 +36,10 @@ public class BaseClass {
 		String dbPassword = fileUtility.getDataFromPropertyFile(IConstants.PROPERTY_FILE_PATH, "dbpassword");
 		connection = databaseUtilty.connectDB(dbUrl, dbUserName, dbPassword);
 		UtilityObjectClass.setDbConnection(connection);
+
+		System.out.println("*********Connect to the Linux Server*********");
+		session = sshUtility.connectToLinuxServer(IConstants.SSH_HOST, IConstants.SSH_PORT_NUMBER, IConstants.SSH_USERNAME, IConstants.SSH_PASSWORD);
+		UtilityObjectClass.setSshSession(session);
 	}
 
 	@BeforeClass
@@ -59,16 +67,19 @@ public class BaseClass {
 	public void configAM(ITestResult result) {
 		System.out.println("*********Sign out from the Application*********");
 	}
-	
+
 	@AfterClass
 	public void configAC() {
 		System.out.println("*********Close browser*********");
-		driver.close();
+		driver.quit();
 	}
 
 	@AfterSuite
 	public void configAS() {
-		System.out.println("*********Disconnected from the Database*********");
+		System.out.println("*********Disconnect from the Database*********");
 		databaseUtilty.closeDB(connection);
+
+		System.out.println("*********Disconnect from the Linux Server*********");
+		sshUtility.disconnectFromLinuxServer(session);
 	}
 }

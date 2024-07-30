@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.tyss.simulationProject.testcases.SimulateTransactionsTest">
+      <class name="org.tyss.simulationProject.testcases.NewTest">
         <methods>
           <include name="configAC"/>
           <include name="configAS"/>
           <include name="configBC"/>
           <include name="configBS"/>
           <include name="configAM"/>
-          <include name="simulateTransactionsTest"/>
           <include name="configBM"/>
+          <include name="simulateTransactionsTest"/>
         </methods>
-      </class> <!-- org.tyss.simulationProject.testcases.SimulateTransactionsTest -->
+      </class> <!-- org.tyss.simulationProject.testcases.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
