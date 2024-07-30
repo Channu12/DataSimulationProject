@@ -2,54 +2,54 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-30T13:54:03 IST" name="Default suite" finished-at="2024-07-30T13:54:26 IST" duration-ms="23662">
+  <suite started-at="2024-07-30T14:29:57 IST" name="Default suite" finished-at="2024-07-30T14:30:16 IST" duration-ms="18907">
     <groups>
     </groups>
-    <test started-at="2024-07-30T13:54:03 IST" name="Default test" finished-at="2024-07-30T13:54:26 IST" duration-ms="23662">
-      <class name="org.tyss.simulationProject.testcases.NewTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32]" started-at="2024-07-30T13:54:02 IST" name="configBS" finished-at="2024-07-30T13:54:03 IST" duration-ms="503" status="PASS">
+    <test started-at="2024-07-30T14:29:57 IST" name="Default test" finished-at="2024-07-30T14:30:16 IST" duration-ms="18907">
+      <class name="org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32]" started-at="2024-07-30T14:29:56 IST" name="configBS" finished-at="2024-07-30T14:29:57 IST" duration-ms="753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32]" started-at="2024-07-30T13:54:03 IST" name="configBC" finished-at="2024-07-30T13:54:08 IST" duration-ms="4957" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32]" started-at="2024-07-30T14:29:57 IST" name="configBC" finished-at="2024-07-30T14:30:01 IST" duration-ms="3397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM(org.testng.ITestResult)[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32]" started-at="2024-07-30T13:54:08 IST" name="configBM" finished-at="2024-07-30T13:54:08 IST" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="configBM(org.testng.ITestResult)[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32]" started-at="2024-07-30T14:30:01 IST" name="configBM" finished-at="2024-07-30T14:30:01 IST" duration-ms="309" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=NewTest.simulateTransactionsTest()[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=PushTransactionsToKafkaAndSimulateTest.pushTransactionsToKafkaAndSimulateTest()[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="simulateTransactionsTest()[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32]" started-at="2024-07-30T13:54:08 IST" name="simulateTransactionsTest" finished-at="2024-07-30T13:54:26 IST" duration-ms="17850" status="PASS">
+        <test-method signature="pushTransactionsToKafkaAndSimulateTest()[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32]" started-at="2024-07-30T14:30:01 IST" name="pushTransactionsToKafkaAndSimulateTest" finished-at="2024-07-30T14:30:16 IST" duration-ms="14610" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- simulateTransactionsTest -->
-        <test-method is-config="true" signature="configAM(org.testng.ITestResult)[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32]" started-at="2024-07-30T13:54:26 IST" name="configAM" finished-at="2024-07-30T13:54:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- pushTransactionsToKafkaAndSimulateTest -->
+        <test-method is-config="true" signature="configAM(org.testng.ITestResult)[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32]" started-at="2024-07-30T14:30:16 IST" name="configAM" finished-at="2024-07-30T14:30:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=simulateTransactionsTest status=SUCCESS method=NewTest.simulateTransactionsTest()[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32] output={null}]]]>
+                <![CDATA[[TestResult name=pushTransactionsToKafkaAndSimulateTest status=SUCCESS method=PushTransactionsToKafkaAndSimulateTest.pushTransactionsToKafkaAndSimulateTest()[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32]" started-at="2024-07-30T13:54:26 IST" name="configAC" finished-at="2024-07-30T13:54:26 IST" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32]" started-at="2024-07-30T14:30:16 IST" name="configAC" finished-at="2024-07-30T14:30:16 IST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:org.tyss.simulationProject.testcases.NewTest@5c80cf32]" started-at="2024-07-30T13:54:27 IST" name="configAS" finished-at="2024-07-30T13:54:27 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest@5c80cf32]" started-at="2024-07-30T14:30:16 IST" name="configAS" finished-at="2024-07-30T14:30:16 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- org.tyss.simulationProject.testcases.NewTest -->
+      </class> <!-- org.tyss.simulationProject.testcases.PushTransactionsToKafkaAndSimulateTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

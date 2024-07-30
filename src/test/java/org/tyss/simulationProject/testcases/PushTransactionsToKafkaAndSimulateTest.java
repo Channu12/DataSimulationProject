@@ -12,10 +12,10 @@ import org.tyss.simulationProject.genericutility.UtilityObjectClass;
 import org.tyss.simulationProject.objectrepository.HomePage;
 
 @Listeners(org.tyss.simulationProject.genericutility.ListenerImplementationClass.class)
-public class NewTest extends BaseClass {
+public class PushTransactionsToKafkaAndSimulateTest extends BaseClass {
 	
 	@Test
-	public void simulateTransactionsTest() {
+	public void pushTransactionsToKafkaAndSimulateTest() {
 
 		//Generate Json Files
 		String excelFilePath = ".\\src\\test\\resources\\TestDataFiles\\Transaction Details.xlsx";
